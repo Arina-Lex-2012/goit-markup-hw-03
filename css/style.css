@@ -1,0 +1,360 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accents: #2196f3;
+  --primary-bg-color: #2f303a;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.14;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list .current {
+  color: var(--accents);
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*======== NAVIGATION ========*/
+.header-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header-logo span {
+  color: var(--accents);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 33px;
+  padding-bottom: 31px;
+}
+
+/*======== END NAVIGATION ========*/
+
+/*======== ADDRESS ========*/
+.address-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.address-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-emailtel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+
+  display: block;
+  padding-top: 33px;
+  padding-bottom: 31px;
+}
+
+/*======== END ADDRESS ========*/
+
+/*======== HERO ========*/
+.hero {
+  padding: 200px 452px 200px 452px;
+  background-color: var(--primary-bg-color);
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-title {
+  display: block;
+  margin: 0 auto 30px auto;
+
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 136px;
+  min-height: 30px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+  background: var(--accents);
+
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: inherit;
+}
+/*======== END HERO ========*/
+
+/*======== FEATURES ========*/
+.feature-cards {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 188px;
+  justify-content: space-between;
+}
+
+.feature-cards .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-title {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features-text {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/*======== END FEATURES ========*/
+
+/*======== ABOUT ========*/
+.about-image-cards {
+  display: flex;
+  margin-bottom: 94px;
+  justify-content: space-between;
+}
+
+.about-image-cards .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-image-cards .item:last-child {
+  margin-right: 0;
+}
+
+.title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
+/*======== END ABOUT ========*/
+
+/*======== TEAM ========*/
+.team-cards {
+  display: flex;
+  margin-bottom: 94px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.team-image {
+  margin-bottom: 30px;
+}
+
+.team-cards .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-title {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/*======== END TEAM ========*/
+
+/*======== FOOTER ADDRESS ========*/
+.footer {
+  background-color: var(--primary-bg-color);
+  height: 252px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-logo span {
+  color: var(--accents);
+}
+
+.footer-emailtel {
+  display: inline-block;
+  margin-bottom: 9px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-map {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+/*======== END FOOTER ADDRESS ========*/
+
+/*======== PORTFOLIO ========*/
+.header-portfolio {
+  border: 1px solid #ececec;
+}
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 99px;
+  margin-bottom: 50px;
+}
+
+.portfolio-buttons .link:hover {
+  background: var(--accents);
+  color: #ffffff;
+}
+
+.portfolio-buttons .link {
+  display: inline-block;
+  padding: 6px 22px;
+  min-width: 38px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background: #f5f4fa;
+
+  border-radius: 4px;
+  text-align: center;
+  color: inherit;
+}
+
+.portfolio-buttons .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-cards .item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-cards .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-cards .item:nth-last-child(-n + 3) {
+  margin-bottom: 94px;
+}
+
+.portfolio-image {
+  margin-bottom: 20px;
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/*======== END PORTFOLIO ========*/
