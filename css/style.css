@@ -287,8 +287,9 @@ p {
 
 /*======== PORTFOLIO ========*/
 .header-portfolio {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
+
 .portfolio-buttons {
   display: flex;
   justify-content: center;
@@ -325,6 +326,7 @@ p {
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .portfolio-cards .item {
