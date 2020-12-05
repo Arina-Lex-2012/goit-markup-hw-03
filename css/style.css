@@ -338,6 +338,7 @@ img {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--portfolio-cards-gap));
   margin-top: calc(-1 * var(--portfolio-cards-gap));
+  margin-bottom: 93px;
 }
 
 .portfolio-card-set > .item {
