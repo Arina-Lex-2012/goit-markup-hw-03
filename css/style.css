@@ -3,16 +3,20 @@
   --title-text-color: #212121;
   --accents: #2196f3;
   --primary-bg-color: #2f303a;
+  --portfolio-cards-gap: 30px;
 }
 
 body {
   font-family: Roboto, sans-serif;
 }
 
+/*CONTAINER*/
 .container {
-  width: 1200px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 a {
@@ -39,6 +43,12 @@ h2,
 p {
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*======== NAVIGATION ========*/
@@ -69,8 +79,8 @@ p {
   margin-right: 50px;
 }
 
-.site-nav .link {
-  display: block;
+.site-nav .item {
+  display: inline-block;
   padding-top: 33px;
   padding-bottom: 31px;
 }
@@ -103,22 +113,23 @@ p {
 
 /*======== HERO ========*/
 .hero {
-  padding: 200px 452px 200px 452px;
   background-color: var(--primary-bg-color);
+}
+
+.hero-content {
+  margin-bottom: 94px;
   text-align: center;
-  color: #ffffff;
 }
 
 .hero-title {
-  display: block;
-  margin: 0 auto 30px auto;
-
+  display: inline-block;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .hero-button {
@@ -137,24 +148,23 @@ p {
   border-radius: 4px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: inherit;
+  color: #ffffff;
 }
 /*======== END HERO ========*/
 
 /*======== FEATURES ========*/
-.feature-cards {
+.feature-card-set {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 188px;
-  justify-content: space-between;
+  margin-left: calc(-1 * var(--portfolio-cards-gap));
+  margin-bottom: 94px;
 }
 
-.feature-cards .item:not(:last-child) {
-  margin-right: 30px;
+.feature-card-set > .item {
+  flex-basis: calc(100% / 3 - var(--portfolio-cards-gap) ;);
+  margin-left: var(--portfolio-cards-gap);
 }
 
-.features-title {
-  display: inline-block;
+.feature-title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -165,8 +175,7 @@ p {
   color: var(--title-text-color);
 }
 
-.features-text {
-  display: inline-block;
+.feature-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -176,23 +185,22 @@ p {
 /*======== END FEATURES ========*/
 
 /*======== ABOUT ========*/
-.about-image-cards {
+.about-card-set {
   display: flex;
+  margin-left: calc(-1 * var(--portfolio-cards-gap));
   margin-bottom: 94px;
-  justify-content: space-between;
 }
 
-.about-image-cards .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.about-image-cards .item:last-child {
-  margin-right: 0;
+.about-card-set .item {
+  flex-basis: calc(100% / 3 - var(--portfolio-cards-gap) ;);
+  margin-left: var(--portfolio-cards-gap);
 }
 
 .title {
   margin-bottom: 50px;
+}
 
+.title h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
@@ -204,25 +212,27 @@ p {
 /*======== END ABOUT ========*/
 
 /*======== TEAM ========*/
-.team-cards {
+.team-card-set {
   display: flex;
-  margin-bottom: 94px;
-  justify-content: space-between;
+  margin-left: calc(-1 * var(--portfolio-cards-gap));
+  padding-bottom: 94px;
+}
+
+.team-card-set > .item {
+  flex-basis: calc(100% / 3 - var(--portfolio-cards-gap) ;);
+  margin-left: var(--portfolio-cards-gap);
+}
+
+.team-card-content {
+  padding: 26px 59px 30px 59px;
   text-align: center;
 }
 
-.team-image {
-  margin-bottom: 30px;
-}
-
-.team-cards .item:not(:last-child) {
-  margin-right: 30px;
+.team-title {
+  margin-bottom: 10px;
 }
 
 .team-title {
-  display: inline-block;
-  margin-bottom: 10px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -285,25 +295,19 @@ p {
 }
 /*======== END FOOTER ADDRESS ========*/
 
-/*======== PORTFOLIO ========*/
+/*======== PORTFOLIO BUTTONS ========*/
 .header-portfolio {
   border-bottom: 1px solid #ececec;
 }
 
-.portfolio-buttons {
+.portfolio-button-set {
   display: flex;
-  justify-content: center;
-  margin-top: 99px;
   margin-bottom: 50px;
+  margin-top: 94px;
+  justify-content: center;
 }
 
-.portfolio-buttons .link:hover {
-  background: var(--accents);
-  color: #ffffff;
-}
-
-.portfolio-buttons .link {
-  display: inline-block;
+.portfolio-button-set > .item > .link {
   padding: 6px 22px;
   min-width: 38px;
 
@@ -313,53 +317,54 @@ p {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background: #f5f4fa;
+  text-align: center;
 
   border-radius: 4px;
-  text-align: center;
-  color: inherit;
-}
-
-.portfolio-buttons .item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-cards {
+.portfolio-button-set > .item .link:hover,
+.portfolio-button-set > .item .link:hover {
+  color: #ffffff;
+  background-color: var(--accents);
+}
+
+/*======== END PORTFOLIO BUTTONS ========*/
+
+/*======== PORTFOLIO CARDS ========*/
+
+.portfolio-card-set {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: calc(-1 * var(--portfolio-cards-gap));
+  margin-top: calc(-1 * var(--portfolio-cards-gap));
 }
 
-.portfolio-cards .item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+.portfolio-card-set > .item {
+  flex-basis: calc(100% / 3 - var(--portfolio-cards-gap));
+  margin-left: var(--portfolio-cards-gap);
+  margin-top: var(--portfolio-cards-gap);
+
+  outline: 1px solid #eeeeee;
 }
 
-.portfolio-cards .item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-cards .item:nth-last-child(-n + 3) {
-  margin-bottom: 94px;
-}
-
-.portfolio-image {
-  margin-bottom: 20px;
+.portfolio-card-content {
+  padding: 20px 24px;
 }
 
 .portfolio-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+
+  margin-bottom: 4px;
 }
 
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-/*======== END PORTFOLIO ========*/
+/*======== END PORTFOLIO CARDS ========*/
