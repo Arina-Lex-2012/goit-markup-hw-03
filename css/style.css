@@ -153,10 +153,12 @@ img {
 /*======== END HERO ========*/
 
 /*======== FEATURES ========*/
+.features {
+  padding-bottom: 94px;
+}
 .feature-card-set {
   display: flex;
   margin-left: calc(-1 * var(--portfolio-cards-gap));
-  margin-bottom: 94px;
 }
 
 .feature-card-set > .item {
@@ -185,10 +187,12 @@ img {
 /*======== END FEATURES ========*/
 
 /*======== ABOUT ========*/
+.about {
+  padding-bottom: 94px;
+}
 .about-card-set {
   display: flex;
   margin-left: calc(-1 * var(--portfolio-cards-gap));
-  margin-bottom: 94px;
 }
 
 .about-card-set .item {
@@ -212,10 +216,13 @@ img {
 /*======== END ABOUT ========*/
 
 /*======== TEAM ========*/
+.team {
+  padding-bottom: 94px;
+}
+
 .team-card-set {
   display: flex;
   margin-left: calc(-1 * var(--portfolio-cards-gap));
-  padding-bottom: 94px;
 }
 
 .team-card-set > .item {
@@ -253,11 +260,12 @@ img {
 .footer {
   background-color: var(--primary-bg-color);
   height: 252px;
+
+  padding-top: 60px;
 }
 
 .footer-logo {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
 
   font-family: Raleway;
@@ -296,6 +304,10 @@ img {
 /*======== END FOOTER ADDRESS ========*/
 
 /*======== PORTFOLIO BUTTONS ========*/
+.hero-portfolio {
+  padding-top: 94px;
+}
+
 .header-portfolio {
   border-bottom: 1px solid #ececec;
 }
@@ -303,7 +315,6 @@ img {
 .portfolio-button-set {
   display: flex;
   margin-bottom: 50px;
-  margin-top: 94px;
   justify-content: center;
 }
 
@@ -332,13 +343,15 @@ img {
 /*======== END PORTFOLIO BUTTONS ========*/
 
 /*======== PORTFOLIO CARDS ========*/
+.portfolio {
+  padding-bottom: 93px;
+}
 
 .portfolio-card-set {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--portfolio-cards-gap));
   margin-top: calc(-1 * var(--portfolio-cards-gap));
-  margin-bottom: 93px;
 }
 
 .portfolio-card-set > .item {
