@@ -118,7 +118,6 @@ img {
   background-color: var(--primary-bg-color);
   padding-bottom: 200px;
   padding-top: 200px;
-  margin-bottom: 94px;
 }
 
 .hero-content {
@@ -160,18 +159,17 @@ img {
 /*======== FEATURES ========*/
 .features {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .feature-card-set {
   display: flex;
-  margin-left: calc(-1 * var(--portfolio-cards-gap));
 }
 
-.feature-card-set > .item {
-  flex-basis: calc(100% / 3 - var(--portfolio-cards-gap) ;);
-  margin-left: var(--portfolio-cards-gap);
+.feature-card-set > .item:not(:first-child) {
+  margin-left: 30px;
 }
 
-.feature-title {
+.feature-one-card .feature-title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -310,7 +308,8 @@ img {
 
 /*======== PORTFOLIO BUTTONS ========*/
 .portfolio {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .header-portfolio {
@@ -348,10 +347,6 @@ img {
 /*======== END PORTFOLIO BUTTONS ========*/
 
 /*======== PORTFOLIO CARDS ========*/
-.portfolio {
-  margin-bottom: 94px;
-}
-
 .portfolio-card-set {
   display: flex;
   flex-wrap: wrap;
