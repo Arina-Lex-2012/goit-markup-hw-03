@@ -319,7 +319,6 @@ p {
 .portfolio-cards .item {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-  outline: 1px solid tomato;
 }
 
 .portfolio-image {
