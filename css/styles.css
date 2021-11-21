@@ -304,7 +304,6 @@ p {
 }
 
 .portfolio-cards .item {
-  flex-basis: calc(100% / 3 - 30px);
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
