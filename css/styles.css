@@ -131,8 +131,10 @@ p {
 
 /* hero */
 .hero {
-  background-color: var(--secondary-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
+  background-color: var(--secondary-bg-color);
 }
 
 .hero-title {
@@ -219,6 +221,18 @@ p {
   background-color: var(--third-bg-color);
 }
 
+.team-list {
+  display: flex;
+}
+
+.team-list .item + .item {
+  margin-left: var(--card-set-gap);
+}
+
+.team-list .item {
+  text-align: center;
+}
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -232,41 +246,40 @@ p {
   line-height: 1.19;
 }
 
-.team-image {
-  margin-bottom: 30px;
-}
-
-.team-list {
-  display: flex;
-}
-
-.team-list .item + .item {
-  margin-left: var(--card-set-gap);
-}
-
-.team-list .item {
-  text-align: center;
+.team-content {
+  padding-top: var(--card-set-gap);
+  padding-bottom: var(--card-set-gap);
 }
 
 /* footer */
 .footer p {
+  margin-bottom: 9px;
   color: var(--primary-white-color);
   font-style: normal;
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 
 .footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--primary-white-color);
 }
 
 .footer-contacts .link {
+  display: block;
   color: var(--footer-contacts-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-contacts .link:first-child {
+  margin-bottom: 9px;
 }
 
 .footer-contacts .link:hover,
@@ -306,6 +319,7 @@ p {
 .portfolio-cards .item {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+  outline: 1px solid tomato;
 }
 
 .portfolio-image {
