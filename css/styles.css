@@ -138,13 +138,16 @@ p {
 }
 
 .hero-title {
+  width: 696px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
   color: var(--primary-white-color);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -190,6 +193,10 @@ p {
 
 .advantages-list {
   display: flex;
+}
+
+.advantages-list .item {
+  width: 270px;
 }
 
 .advantages-list .item + .item {
